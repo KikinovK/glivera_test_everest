@@ -1,0 +1,21 @@
+.header_menu {
+  @extend .header_nav__item;
+}
+
+.header_menu__list {
+  @extend %global_flex_block_row_wrap_flex-start;
+
+  margin: 0 -4rem -1rem 0;
+}
+
+.header_menu__item {
+  padding: 0 4rem 1rem 0;
+}
+
+.header_menu__link {
+  display: block;
+
+  font-size: 1.2rem;
+
+  text-transform: uppercase;
+}

@@ -8,8 +8,11 @@ $font_size_base: 1.2rem;
 $white: #fff;
 $black: #000;
 
-$color_text_base: $black;
-$color_link_base:#4aa3df;
+$color_text_base: #19202c;
+$color_link_base: $color_text_base;
+$color_link_active: #bd243a;
+
+$color_icon: #777777;
 $body_bg: $white;
 //---------------------------------------------colors###
 
@@ -22,7 +25,7 @@ $z-index: (
 //---------------------------------------------z-index###
 
 //---------------------------------------------layout
-$page_width: 96rem;
+$page_width: 115.4rem;
 
 //---------------------------------------------layout###
 

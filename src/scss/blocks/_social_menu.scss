@@ -1,0 +1,20 @@
+.header_social {
+  @extend .header_nav__item;
+}
+
+.header_social__list {
+  @extend %global_flex_block_row_wrap_flex-start_center;
+  margin: 0 -2.8rem -1rem 0;
+}
+
+.header_social__item {
+  padding: 0 2.8rem 1rem 0;
+}
+
+.header_social__link {
+  display: block;
+  width: 2rem;
+  height: 1.4rem;
+
+  color: $color_icon;
+}

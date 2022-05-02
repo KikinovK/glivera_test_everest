@@ -1,3 +1,52 @@
 mixin header
 	header.header
-		.section_in
+		.header__row
+			.header_logo
+				a.header_logo__link(href="#")
+					img.header_logo__img(src=`${assetsImage}/logo.svg`, alt="")
+			nav.header__nav
+				.header_menu
+					+menu({
+						gl_class: 'header_menu',
+						items: [
+							{title: 'О нас'},
+							{title: 'Решения'},
+							{title: 'Аналитика'},
+							{title: 'Партнеры'},
+							{title: 'Контакты'},
+							{title: 'Подписка'}
+						]
+					})
+				.header_social
+					+social({
+						gl_class: 'header_social',
+						items: [
+							{
+								name_icon: 'facebook',
+								mod_icon: 'icon--size_mod'
+							},
+							{
+								name_icon: 'twitter',
+								mod_icon: 'icon--size_mod'
+							},
+							{
+								name_icon: 'rss',
+								mod_icon: 'icon--size_mod'
+							},
+							{
+								name_icon: 'youtube',
+								mod_icon: 'icon--size_mod'
+							}
+						]
+					})
+				.header_search
+					a.header_search__link(href="#")
+						+icon('shape', 'icon--size_mod')
+				.header_lengv_menu
+					+menu({
+						gl_class: 'header_lengv_menu',
+						items: [
+							{title: 'UA'},
+							{title: 'RU'}
+						]
+					})
