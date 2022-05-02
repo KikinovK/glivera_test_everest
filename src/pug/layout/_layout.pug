@@ -12,8 +12,7 @@ html(lang="en")
 		+head(array)
 	body(class= array.body_class)
 		+header
-		.wrapper(class= array.layout_mod)
-			.base(class= array.layout_mod)
-				block content_block
-			+footer
+		main.main(class= array.layout_mod)
+			block content_block
+		+footer
 		block local_popup
