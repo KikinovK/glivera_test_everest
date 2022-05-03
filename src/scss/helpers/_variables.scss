@@ -1,6 +1,7 @@
 //---------------------------------------------fonts
 $font_path: "../fonts/";
 $font_1: 'Apercu Pro', sans-serif;
+$font_2: 'Apercu Pro Bold', sans-serif;
 $font_size_base: 1.2rem;
 //---------------------------------------------fonts###
 
@@ -11,9 +12,13 @@ $black: #000;
 $color_text_base: #19202c;
 $color_link_base: $color_text_base;
 $color_link_active: #bd243a;
+$color_text_footer: $white;
 
 $color_icon: #777777;
 $body_bg: $white;
+$color_bg_footer: $color_link_active;
+
+$color_br_footer: #D8D8D8;
 //---------------------------------------------colors###
 
 //---------------------------------------------z-index
@@ -54,3 +59,7 @@ $input_placeholder_color: rgba($black, .4);
 $input_text_color: $black;
 $input_radius: $gl_radius;
 //---------------------------------------------forms###
+
+//----------------------------------------------padding
+
+$padding_section_horizontal: 1rem;

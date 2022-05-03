@@ -1,0 +1,17 @@
+.footer_copyright {
+  @extend %global_flex_block_row_nowrap_flex-start_center;
+}
+
+.copyright__icon {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+}
+
+.copyright__text {
+
+}
+
+.copyright__text span{
+  display: block;
+}

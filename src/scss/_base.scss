@@ -67,6 +67,13 @@ a {
 
 }
 
+footer a {
+	&:hover,
+	&:focus {
+		color: $color_icon;
+	}
+}
+
 .elements_list {
 	padding: 3rem;
 }

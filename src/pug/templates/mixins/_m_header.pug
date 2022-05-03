@@ -2,8 +2,8 @@ mixin header
 	header.header
 		.header__row
 			.header_logo
-				a.header_logo__link(href="#")
-					img.header_logo__img(src=`${assetsImage}/logo.svg`, alt="")
+				a.logo__link(href="#")
+					img.logo__img(src=`${assetsImage}/logo.svg`, alt="")
 			nav.header__nav
 				.header_menu
 					+menu({
@@ -19,7 +19,6 @@ mixin header
 					})
 				.header_social
 					+social({
-						gl_class: 'header_social',
 						items: [
 							{
 								name_icon: 'facebook',
