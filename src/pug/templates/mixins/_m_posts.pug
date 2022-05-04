@@ -1,0 +1,27 @@
+mixin posts(array)
+  ul.post__list
+    each item in array.items
+      li.post__item(class= item.col && item.row ? `post__item--${item.col}x${item.row}` : '')
+        .post(class= item.col && item.row ? `post--${item.col}x${item.row}${item.img ? '_img' : ''}` : '')
+          if (item.img)
+            +picture({
+              jpeg: true,
+              class: 'post__pic',
+              img_class: 'post__img',
+              img: item.img
+            })
+          .post__info
+            .post__header
+              .post__category(class = `post__category--${item.category_mod}`)=item.category || ''
+              if (item.icon)
+                .post__icon
+                  +icon(item.icon, 'icon--size_mod')
+              else
+                if (item.autor)
+                  .post__autor=item.autor
+            h3.post__title(class = item.title_mod ? `post__title--${item.title_mod}` : '')=item.title || ''
+            if (item.text)
+              .post__text(class = item.text_mod ? `post__title--${item.text_mod}` : '')=item.text
+            .post__footer
+              .post__date=item.date || ''
+              .post__time=item.time || ''

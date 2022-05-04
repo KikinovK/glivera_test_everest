@@ -2,6 +2,7 @@
 $font_path: "../fonts/";
 $font_1: 'Apercu Pro', sans-serif;
 $font_2: 'Apercu Pro Bold', sans-serif;
+$font_3: 'Apercu Pro Medium', sans-serif;
 $font_size_base: 1.2rem;
 //---------------------------------------------fonts###
 
@@ -17,8 +18,12 @@ $color_text_footer: $white;
 $color_icon: #777777;
 $body_bg: $white;
 $color_bg_footer: $color_link_active;
+$color_bg_post: #f4f4f4;
 
 $color_br_footer: #D8D8D8;
+
+$color_category: $color_text_base;
+$color_blue: #5496E3;
 //---------------------------------------------colors###
 
 //---------------------------------------------z-index
