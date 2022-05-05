@@ -7,17 +7,16 @@
   grid-auto-flow: dense;
 
 }
-
-.post__item {
-  height: 220px;
-
-
-}
 @mixin grid-span($col, $row) {
   grid-row: span $row;
   grid-column: span $col;
 
   height: 100%;
+}
+
+.post__item {
+  @include grid-span(1, 1);
+  height: 220px;
 }
 
 .post__item--3x2 {
@@ -40,7 +39,17 @@
   height: 100%;
 
   background-color: $color_bg_post;
+  cursor: pointer;
+
+  transition: box-shadow .3s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 1px 10px 0px rgba($black, .4);;
+  }
 }
+
+
 
 .post--3x2_img {
   position: relative;
@@ -154,6 +163,16 @@
   }
 }
 
+.post__link {
+  display: contents;
+  height: 100%;
+  color: currentColor;
+
+  &:hover,
+  &:focus {
+    color: currentColor;
+  }
+}
 .post__img {
   @extend %cover_img;
 }
