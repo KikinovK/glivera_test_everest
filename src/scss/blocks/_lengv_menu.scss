@@ -27,4 +27,8 @@
   color: $color_icon;
 
   text-transform: uppercase;
+
+  @include bp($point_3) {
+    font-size: 3rem;
+  }
 }

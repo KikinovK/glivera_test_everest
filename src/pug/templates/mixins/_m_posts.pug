@@ -4,12 +4,12 @@ mixin posts(array)
       li.post__item(class= item.col && item.row ? `post__item--${item.col}x${item.row}` : '')
         .post(class= item.col && item.row ? `post--${item.col}x${item.row}${item.img ? '_img' : ''}` : '')
           a.post__link
-            if (isMedia)
+            if (item.baner)
               +picture({
                   jpeg: true,
-                  class: 'post__pic post__pic--full',
-                  img_class: 'post__img',
-                  img: item.img
+                  class: 'post__pic_full',
+                  img_class: 'post__img_full',
+                  img: item.baner
                 })
             else
               if (item.img)

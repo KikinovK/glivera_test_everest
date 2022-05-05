@@ -8,4 +8,9 @@
   height: 1.4rem;
 
   color: $color_icon;
+
+  @include bp($point_3) {
+    width: 5rem;
+    height: 3rem;
+  }
 }

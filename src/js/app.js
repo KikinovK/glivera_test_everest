@@ -6,6 +6,7 @@ import pageWidgetInit from './dev_vendors/dev_widget';
 // ------------------- imports###
 
 // ------------------  import components
+
 // ------------------  import components###
 
 window.jQuery = $;
@@ -27,6 +28,21 @@ if (GLOBAL_VARS.projectDevStatus) {
 
 const readyFunc = () => {
 	console.log('ready');
+	let $menuTrigger;
+	let $body;
+
+	$menuTrigger = $('.menuTrigger');
+	$body = $('.header__nav');
+
+	$menuTrigger.on('click', () => {
+		if ($body.hasClass('menu_open')) {
+			$body.removeClass('menu_open');
+			$(this).removeClass('active_mod');
+		} else {
+			$body.addClass('menu_open');
+			$(this).addClass('active_mod');
+		}
+	});
 };
 
 const loadFunc = () => {

@@ -4,11 +4,19 @@
 
 .social__list {
   @extend %global_flex_block_row_wrap_flex-start_center;
-  margin: 0 -2.8rem -1rem 0;
+  margin: 0 -2rem -1rem 0;
+
+  @include bp($point_3) {
+    margin-right: -1.6rem;
+  }
 }
 
 .social__item {
-  padding: 0 2.8rem 1rem 0;
+  padding: 0 2rem 1rem 0;
+
+  @include bp($point_3) {
+    padding-right: 1.6rem;
+  }
 }
 
 .social__link {
@@ -17,6 +25,11 @@
   height: 1.4rem;
 
   color: $color_icon;
+
+  @include bp($point_3) {
+    width: 4rem;
+    height: 3rem;
+  }
 }
 
 .social__link--white {

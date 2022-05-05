@@ -6,6 +6,18 @@
   grid-auto-rows: 1fr;
   grid-auto-flow: dense;
 
+  @include bp($point_1) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include bp($point_3) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include bp($point_4) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }
 @mixin grid-span($col, $row) {
   grid-row: span $row;
@@ -16,7 +28,7 @@
 
 .post__item {
   @include grid-span(1, 1);
-  height: 220px;
+  height: auto;
 }
 
 .post__item--3x2 {
@@ -120,6 +132,10 @@
   @extend %global_flex_block_column_nowrap_space_between;
 
   @extend .post--1x2;
+
+  .post__pic {
+    width: 100%;
+  }
 }
 
 .post--1x2 {
@@ -173,8 +189,18 @@
     color: currentColor;
   }
 }
+
+.post__pic_full {
+  width: 100%;
+}
+
 .post__img {
   @extend %cover_img;
+}
+
+.post__img_full {
+  @extend %cover_img;
+
 }
 
 .post__info {
