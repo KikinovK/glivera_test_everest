@@ -21,6 +21,8 @@
 .header__row {
 	@extend .section_in;
 	@extend %global_flex_block_row_wrap_space_between_center;
+
+	overflow: hidden;
 }
 
 .header__nav {
@@ -28,8 +30,6 @@
 	@extend %transition_transform;
 
 	margin: 0 -3rem -1rem 0;
-
-
 
 	@include bp($point_3) {
 		position: absolute;
@@ -51,9 +51,7 @@
 	}
 }
 
-.menu_open {
-	transform: translateX(-320px);
-}
+
 
 .header_nav__item {
 	padding: 0 3rem 1rem 0;
@@ -139,4 +137,17 @@
 	display: none;
 
 	background-color: rgba($color_icon, .5);
+}
+
+//--------------------------------for JS
+.menu_open {
+	transform: translateX(-320px);
+}
+
+.visible {
+	display: block;
+}
+
+.scroll-off {
+	overflow-y: hidden;
 }

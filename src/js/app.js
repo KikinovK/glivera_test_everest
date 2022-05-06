@@ -28,21 +28,26 @@ if (GLOBAL_VARS.projectDevStatus) {
 
 const readyFunc = () => {
 	console.log('ready');
-	let $menuTrigger;
-	let $body;
+	const $menuTrigger = $('.menuTrigger');
+	const $menu = $('.headerPanel');
+	const $overlay = $('.overlay');
+	const $body = $('body');
 
-	$menuTrigger = $('.menuTrigger');
-	$body = $('.header__nav');
-
-	$menuTrigger.on('click', () => {
-		if ($body.hasClass('menu_open')) {
-			$body.removeClass('menu_open');
+	function hendlerTrigger() {
+		if ($menu.hasClass('menu_open')) {
+			$menu.removeClass('menu_open');
 			$(this).removeClass('active_mod');
+			$body.removeClass('scroll-off');
+			$overlay.removeClass('visible');
 		} else {
-			$body.addClass('menu_open');
+			$menu.addClass('menu_open');
 			$(this).addClass('active_mod');
+			$body.addClass('scroll-off');
+			$overlay.addClass('visible');
 		}
-	});
+	}
+
+	$menuTrigger.on('click', hendlerTrigger);
 };
 
 const loadFunc = () => {
