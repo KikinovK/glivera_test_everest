@@ -34,8 +34,6 @@
   @include grid-span(1, 1);
   height: auto;
 
-  overflow: hidden;
-
   @include bp($point_6) {
     margin-bottom: 1.6rem;;
   }
@@ -99,7 +97,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: 1px 1px 10px 0px rgba($black, .4);;
+    box-shadow: 1px 1px 10px 0px rgba($black, .4);
   }
 }
 
