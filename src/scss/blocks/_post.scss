@@ -18,6 +18,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  @include bp($point_6) {
+    display: block;
+  }
+
 }
 @mixin grid-span($col, $row) {
   grid-row: span $row;
@@ -29,6 +33,12 @@
 .post__item {
   @include grid-span(1, 1);
   height: auto;
+
+  overflow: hidden;
+
+  @include bp($point_6) {
+    margin-bottom: 1.6rem;;
+  }
 }
 
 .post__item--3x2 {
@@ -36,6 +46,10 @@
 
   @include bp($point_4) {
     @include grid-span(2, 2);
+  }
+
+  @include bp($point_6) {
+    @include grid-span(1, 1);
   }
 }
 
@@ -45,6 +59,10 @@
   @include bp($point_4) {
     @include grid-span(2, 1);
   }
+
+  @include bp($point_6) {
+    @include grid-span(1, 1);
+  }
 }
 
 .post__item--1x2 {
@@ -53,6 +71,10 @@
   @include bp($point_4) {
     @include grid-span(1, 2);
   }
+
+  @include bp($point_6) {
+    @include grid-span(1, 1);
+  }
 }
 
 .post__item--2x2 {
@@ -60,6 +82,10 @@
 
   @include bp($point_4) {
     @include grid-span(2, 2);
+  }
+
+  @include bp($point_6) {
+    @include grid-span(1, 1);
   }
 }
 
@@ -130,6 +156,17 @@
   .post__pic {
     width: 100%;
   }
+
+  @include bp($point_6) {
+    .post__pic {
+      position: absolute;
+    }
+
+    .post__info {
+      position: relative;
+      z-index: 100;
+    }
+  }
 }
 
 .post--2x2_img {
@@ -192,6 +229,18 @@
 
   .post__category {
     margin-bottom: 1.2rem;
+  }
+
+  @include bp($point_6) {
+    flex-direction: column;
+
+    .post__pic {
+      width: 100%;
+    }
+
+    .post__img {
+      width: 100%;
+    }
   }
 }
 
