@@ -33,18 +33,34 @@
 
 .post__item--3x2 {
   @include grid-span(3, 2);
+
+  @include bp($point_4) {
+    @include grid-span(1, 2);
+  }
 }
 
 .post__item--2x1 {
   @include grid-span(2, 1);
+
+  @include bp($point_4) {
+    @include grid-span(1, 1);
+  }
 }
 
 .post__item--1x2 {
   @include grid-span(1, 2);
+
+  @include bp($point_4) {
+    @include grid-span(1, 2);
+  }
 }
 
 .post__item--2x2 {
   @include grid-span(2, 2);
+
+  @include bp($point_4) {
+    @include grid-span(1, 2);
+  }
 }
 
 .post {
