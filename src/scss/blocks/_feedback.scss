@@ -10,12 +10,20 @@
 .feedback__form {
   @extend %global_flex_block_row_wrap_space_between_center;
   width: 100%;
+
+  @include bp($point_6) {
+    flex-direction: column;
+  }
 }
 
 .feedback__email {
   width: 52%;
   min-width: 20rem;
 
+  @include bp($point_6) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 .feedback_email__input {
@@ -45,6 +53,10 @@
 .feedback__btn {
  width: 38%;
  min-width: 16rem;
+
+  @include bp($point_6) {
+    align-self: center;
+  }
 }
 
 .feedback_btn__input {
