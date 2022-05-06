@@ -15,7 +15,7 @@
   }
 
   @include bp($point_4) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
@@ -35,7 +35,7 @@
   @include grid-span(3, 2);
 
   @include bp($point_4) {
-    @include grid-span(1, 2);
+    @include grid-span(2, 2);
   }
 }
 
@@ -43,7 +43,7 @@
   @include grid-span(2, 1);
 
   @include bp($point_4) {
-    @include grid-span(1, 1);
+    @include grid-span(2, 1);
   }
 }
 
@@ -59,7 +59,7 @@
   @include grid-span(2, 2);
 
   @include bp($point_4) {
-    @include grid-span(1, 2);
+    @include grid-span(2, 2);
   }
 }
 

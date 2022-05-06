@@ -21,8 +21,6 @@
 .header__row {
 	@extend .section_in;
 	@extend %global_flex_block_row_wrap_space_between_center;
-
-	overflow: hidden;
 }
 
 .header__nav {
@@ -36,10 +34,11 @@
 		top: 0;
 		right: 0;
 
+		flex-wrap: nowrap;
 		flex-direction: column;
 		justify-content: start;
 		width: 320px;
-		min-height: 100vh;
+		height: 100vh;
 
 		padding: 12rem 2rem 2rem 5rem;
 		margin-bottom: -5rem;
@@ -48,7 +47,7 @@
 		background-color: #fff;
 
 
-		transform: translate(100%, 0);
+		transform: translate(0, -100%);
 
 		overflow-x: hidden;
 		overflow-y: auto;
