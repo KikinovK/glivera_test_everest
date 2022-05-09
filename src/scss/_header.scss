@@ -27,7 +27,7 @@
 	@extend %global_flex_block_row_wrap_flex-start_center;
 	@extend %transition_transform;
 
-	margin: 0 -3rem -1rem 0;
+	margin: 0 -3rem 0 0;
 
 	@include bp($point_3) {
 		position: absolute;
@@ -57,7 +57,7 @@
 
 
 .header_nav__item {
-	padding: 0 3rem 1rem 0;
+	padding: 0 3rem 0 0;
 
 	@include bp($point_3) {
 		padding-bottom: 5rem;
