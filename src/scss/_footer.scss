@@ -22,10 +22,6 @@
 	@include bp($point_1) {
 		flex-wrap: wrap;
 	}
-
-	@include bp($point_4) {
-
-	}
 }
 
 .footer__item {
@@ -33,18 +29,6 @@
 
 	flex: 1 1 auto;
 	padding: 0 5.6rem 2rem 0;
-
-	@include bp($point_1) {
-		&:last-child {
-			grid-column: span 3;
-		}
-	}
-
-	@include bp($point_4) {
-		&:last-child {
-			grid-column: span 1;
-		}
-	}
 
 }
 
