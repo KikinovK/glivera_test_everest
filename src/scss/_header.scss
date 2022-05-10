@@ -29,6 +29,8 @@
 
 	margin: 0 -3rem 0 0;
 
+	overflow: hidden;
+
 	@include bp($point_3) {
 		position: absolute;
 		top: 0;

@@ -2,15 +2,25 @@ mixin posts(array)
   ul.post__list
     each item in array.items
       li.post__item(class= item.col && item.row ? `post__item--${item.col}x${item.row}` : '')
-        .post(class= item.col && item.row ? `post--${item.col}x${item.row}${item.img ? '_img' : ''}` : '')
-          a.post__link
+        a.post__link
+          .post(class= item.col && item.row ? `post--${item.col}x${item.row}${item.img ? '_img' : ''}` : '')
             if item.baner
               +picture({
                   jpeg: true,
-                  class: 'post__pic_full',
-                  img_class: 'post__img_full',
-                  img: item.baner
-                })
+                  class: 'post_baner__pic',
+                  img_class: 'post_baner__img',
+                  img: item.baner.img
+              })
+              .post_baner__info
+                span.post_baner__acent=item.baner.acent
+                .post_baner__title_wrap
+                  span.post_baner__title!=item.baner.title
+                span.post_baner__autor=item.baner.autor
+                .post_baner__link
+                  .link__text=item.baner.link
+                  .link__icon
+                    +icon(item.baner.icon, 'icon--size_mod')
+
             else
               if item.img
                 +picture({

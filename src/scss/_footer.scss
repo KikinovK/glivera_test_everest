@@ -14,27 +14,27 @@
 
 .footer__row {
 	@extend .section_in;
-	// @extend %global_flex_block_row_wrap_space_between_center;
 }
 
 .footer__list {
-	// @extend %global_flex_block_row_wrap_flex-start_stretch;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 2fr;
-	column-gap: 6.5rem;
+	@extend %global_flex_block_row_nowrap_flex-start_stretch;
+
+	margin: 0 -5.6rem -2rem 0;
 
 	@include bp($point_1) {
-		grid-template-columns: 1fr 1fr 1fr;
-		column-gap: 3rem;
+		flex-wrap: wrap;
 	}
 
 	@include bp($point_4) {
-		grid-template-columns: 1fr;
+
 	}
 }
 
 .footer__item {
 	@extend %global_flex_block_column_wrap_flex-start;
+
+	flex: 1 1 auto;
+	padding: 0 5.6rem 2rem 0;
 
 	@include bp($point_1) {
 		&:last-child {
@@ -60,6 +60,11 @@
 
 	margin-bottom: 2.6rem;
 }
+
+.footer_title--margin_off {
+	margin-bottom: 0;
+}
+
 
 .footer_title__link {
 	@extend %title_footer;
