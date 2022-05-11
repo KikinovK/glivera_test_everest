@@ -1,9 +1,10 @@
 mixin posts(array)
   ul.post__list
     each item in array.items
-      li.post__item(class= item.col && item.row ? `post__item--${item.col}x${item.row}` : '')
+      - let name_mod = item.col && item.row ? `${array.dictionary[`${item.col}x${item.row}`]}` : '';
+      li.post__item(class= name_mod ? `post__item--${name_mod}` : '')
         a.post__link
-          .post(class= item.col && item.row ? `post--${item.col}x${item.row}${item.img ? '_img' : ''}` : '')
+          .post(class= name_mod ? `post--${name_mod}${item.img ? '_img' : ''}` : '')
             if item.baner
               +picture({
                   jpeg: true,
