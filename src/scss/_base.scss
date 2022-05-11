@@ -21,13 +21,13 @@ body {
 	height: 100%;
 
 	font-size: $font_size_base;
-	color: $color_text_base;
+	color: $color_first;
 
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	background: $body_bg;
+	background: $white;
 
 	overflow-x: hidden;
 
@@ -60,11 +60,11 @@ a {
 	@extend %transition_color;
 
 	text-decoration: none;
-	color: $color_link_base;
+	color: $color_first;
 
 	&:hover,
 	&:focus {
-		color: $color_link_active;
+		color: $red;
 	}
 
 }
@@ -72,7 +72,7 @@ a {
 footer a {
 	&:hover,
 	&:focus {
-		color: $color_icon;
+		color: $color_second;
 	}
 }
 

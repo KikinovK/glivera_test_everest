@@ -18,13 +18,13 @@
 %blue_btn_1 {
 	font-weight: 700;
 	color: $white;
-	background-color: $color_link_base;
+	background-color: $color_first;
 	transition: background-color .3s ease;
 
 	@include st_btn();
 
 	&:hover {
-		background-color: darken($color_link_base, 10%);
+		background-color: darken($color_first, 10%);
 	}
 
 }

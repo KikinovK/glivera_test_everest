@@ -31,21 +31,21 @@
 
   height: 3.8rem;
 
-  color: $color_text_footer;
+  color: $white;
 
-  background-color: rgba($color_text_footer, .34);
+  background-color: rgba($white, .34);
   box-shadow: none;
 
   &::-webkit-input-placeholder {
-		color: $color_text_footer;
+		color: $white;
 	}
 
 	&::-moz-placeholder {
-		color: $color_text_footer;
+		color: $white;
 	}
 
 	&:-ms-input-placeholder {
-		color: $color_text_footer;
+		color: $white;
 	}
 
 }
@@ -66,11 +66,11 @@
   height: 3.8rem;
 
   font-size: 1.4rem;
-  color: $color_text_footer;
+  color: $white;
   text-transform: uppercase;
 
   background-color: transparent;
-  border: 1px solid $color_text_footer;
+  border: 1px solid $white;
   border-radius: unset;
   box-shadow: none;
 
@@ -78,8 +78,8 @@
 
   &:hover,
   &:focus {
-    color: $color_bg_footer;
-    background-color: $color_text_footer;
+    color: $red;
+    background-color: $white;
 
     box-shadow: none;
   }

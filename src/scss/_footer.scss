@@ -3,9 +3,9 @@
 
 	padding: 2.6rem var(--gl-indent) 8rem;
 
-	color: $color_text_footer;
+	color: $white;
 
-	background-color: $color_bg_footer;
+	background-color: $red;
 
 	will-change: transform;
 }
@@ -73,11 +73,11 @@
 
 	font-size: 1.4rem;
 	line-height: 2.6;
-	color: $color_text_footer;
+	color: $white;
 
 	text-transform: uppercase;
 
-	border-bottom: 1px solid rgba($color_br_footer, .5);
+	border-bottom: 1px solid rgba($grey_2, .5);
 }
 //-------------------footer menu
 .footer_menu__list {
@@ -110,7 +110,7 @@
 
 	font-size: 1.4rem;
 	line-height: 2.3;
-	color: $color_text_footer;
+	color: $white;
 }
 
 .submenu__title {

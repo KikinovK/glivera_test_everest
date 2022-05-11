@@ -11,7 +11,7 @@
   &:not(:last-child) {
     padding-right: .5em;
 
-    border-right: 1px solid $color_icon;
+    border-right: 1px solid $color_second;
   }
 
   &:last-child {
@@ -24,7 +24,7 @@
 
   font-family: $font_2;
   font-size: 1.6rem;
-  color: $color_icon;
+  color: $color_second;
 
   text-transform: uppercase;
 
