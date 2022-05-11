@@ -30,9 +30,9 @@
   <link href="css/app.css" rel="stylesheet"></head>
   <body>
     <header class="header">
-      <div class="header__row">
-        <div class="header_logo"><a class="logo__link" href="#"><img class="logo__img" src="images//logo.svg" alt=""></a></div>
+      <div class="header__row"><a class="logo__link" href="#"><img class="logo__img" src="images//logo.svg" alt=""></a>
         <div class="menu_trigger menuTrigger"><span class="menu_trigger_decor"></span></div>
+        <div class="overlay"></div>
         <nav class="header__nav headerPanel">
           <div class="header_menu">
             <ul class="header_menu__list ">
@@ -81,8 +81,8 @@
       <section class="section">
         <div class="section_in">
           <ul class="post__list">
-            <li class="post__item post__item--3x2">
-              <div class="post post--3x2_img"><a class="post__link">
+            <li class="post__item post__item--3x2"><a class="post__link">
+                <div class="post post--3x2_img">
                   <picture class="post__pic">
                     <source srcset="images/medecine.jpeg.webp" type="image/webp">
                     <source srcset="images/medecine.jpeg" type="image/jpeg"><img class="post__img" src="images/medecine.jpeg" alt="">
@@ -97,10 +97,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 6 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item">
-              <div class="post"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item"><a class="post__link">
+                <div class="post">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--dark_blue">Государственный сектор</div>
@@ -115,10 +115,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item">
-              <div class="post"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item"><a class="post__link">
+                <div class="post">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--violete">Страхование</div>
@@ -133,10 +133,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item">
-              <div class="post"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item"><a class="post__link">
+                <div class="post">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--blue">Здравоохранение</div>
@@ -151,10 +151,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item">
-              <div class="post"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item"><a class="post__link">
+                <div class="post">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--red">Телекоммуникации</div>
@@ -169,17 +169,28 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--2x1">
-              <div class="post post--2x1"><a class="post__link">
-                  <picture class="post__pic_full">
-                    <source srcset="images/baner.jpeg.webp" type="image/webp">
-                    <source srcset="images/baner.jpeg" type="image/jpeg"><img class="post__img_full" src="images/baner.jpeg" alt="">
-                  </picture></a></div>
-            </li>
-            <li class="post__item post__item--1x2">
-              <div class="post post--1x2"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--2x1"><a class="post__link">
+                <div class="post post--2x1">
+                  <picture class="post_baner__pic">
+                    <source srcset="images/new.jpeg.webp" type="image/webp">
+                    <source srcset="images/new.jpeg" type="image/jpeg"><img class="post_baner__img" src="images/new.jpeg" alt="">
+                  </picture>
+                  <div class="post_baner__info"><span class="post_baner__acent">New!</span>
+                    <div class="post_baner__title_wrap"><span class="post_baner__title"><strong>Digital transformation</strong> по-украински</span></div><span class="post_baner__autor">Юрий Чубатюк</span>
+                    <div class="post_baner__link">
+                      <div class="link__text">Смотреть</div>
+                      <div class="link__icon">
+                        <svg class="icon icon_play icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#play"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--1x2"><a class="post__link">
+                <div class="post post--1x2">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--blue">Здравоохранение</div>
@@ -191,10 +202,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item">
-              <div class="post"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item"><a class="post__link">
+                <div class="post">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--orange">Транспорт и логистика</div>
@@ -209,10 +220,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item">
-              <div class="post"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item"><a class="post__link">
+                <div class="post">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--green">Банки</div>
@@ -227,10 +238,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--2x1">
-              <div class="post post--2x1_img"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--2x1"><a class="post__link">
+                <div class="post post--2x1_img">
                   <picture class="post__pic">
                     <source srcset="images/coca.jpeg.webp" type="image/webp">
                     <source srcset="images/coca.jpeg" type="image/jpeg"><img class="post__img" src="images/coca.jpeg" alt="">
@@ -245,10 +256,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 6 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item">
-              <div class="post"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item"><a class="post__link">
+                <div class="post">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--purpure">Ритейл и eCommerce</div>
@@ -263,10 +274,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item">
-              <div class="post"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item"><a class="post__link">
+                <div class="post">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--violete">Страхование</div>
@@ -281,10 +292,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--2x1">
-              <div class="post post--2x1_img"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--2x1"><a class="post__link">
+                <div class="post post--2x1_img">
                   <picture class="post__pic">
                     <source srcset="images/it.jpeg.webp" type="image/webp">
                     <source srcset="images/it.jpeg" type="image/jpeg"><img class="post__img" src="images/it.jpeg" alt="">
@@ -299,10 +310,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--1x2">
-              <div class="post post--1x2"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--1x2"><a class="post__link">
+                <div class="post post--1x2">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--purpure">Ритейл/еCommerce</div>
@@ -313,10 +324,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--2x2">
-              <div class="post post--2x2"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--2x2"><a class="post__link">
+                <div class="post post--2x2">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--orange">Транспорт и логистика</div>
@@ -328,10 +339,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--2x1">
-              <div class="post post--2x1_img"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--2x1"><a class="post__link">
+                <div class="post post--2x1_img">
                   <picture class="post__pic">
                     <source srcset="images/bank.jpeg.webp" type="image/webp">
                     <source srcset="images/bank.jpeg" type="image/jpeg"><img class="post__img" src="images/bank.jpeg" alt="">
@@ -346,10 +357,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--2x1">
-              <div class="post post--2x1"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--2x1"><a class="post__link">
+                <div class="post post--2x1">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--red">Телекоммуникации</div>
@@ -364,10 +375,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--1x2">
-              <div class="post post--1x2_img"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--1x2"><a class="post__link">
+                <div class="post post--1x2_img">
                   <picture class="post__pic">
                     <source srcset="images/it.jpeg.webp" type="image/webp">
                     <source srcset="images/it.jpeg" type="image/jpeg"><img class="post__img" src="images/it.jpeg" alt="">
@@ -382,10 +393,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--1x2">
-              <div class="post post--1x2_img"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--1x2"><a class="post__link">
+                <div class="post post--1x2_img">
                   <picture class="post__pic">
                     <source srcset="images/bank.jpeg.webp" type="image/webp">
                     <source srcset="images/bank.jpeg" type="image/jpeg"><img class="post__img" src="images/bank.jpeg" alt="">
@@ -400,10 +411,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--1x2">
-              <div class="post post--1x2_img"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--1x2"><a class="post__link">
+                <div class="post post--1x2_img">
                   <picture class="post__pic">
                     <source srcset="images/logist.jpeg.webp" type="image/webp">
                     <source srcset="images/logist.jpeg" type="image/jpeg"><img class="post__img" src="images/logist.jpeg" alt="">
@@ -418,10 +429,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--2x1">
-              <div class="post post--2x1"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--2x1"><a class="post__link">
+                <div class="post post--2x1">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--green">Банки</div>
@@ -433,10 +444,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--2x1">
-              <div class="post post--2x1"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--2x1"><a class="post__link">
+                <div class="post post--2x1">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--orange">Транспорт и логистика </div>
@@ -451,10 +462,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--2x2">
-              <div class="post post--2x2_img"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--2x2"><a class="post__link">
+                <div class="post post--2x2_img">
                   <picture class="post__pic">
                     <source srcset="images/gov.jpeg.webp" type="image/webp">
                     <source srcset="images/gov.jpeg" type="image/jpeg"><img class="post__img" src="images/gov.jpeg" alt="">
@@ -470,10 +481,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 6 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item">
-              <div class="post"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item"><a class="post__link">
+                <div class="post">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--dark_blue">Государственный сектор</div>
@@ -483,10 +494,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--2x1">
-              <div class="post post--2x1"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--2x1"><a class="post__link">
+                <div class="post post--2x1">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--green">Банки </div>
@@ -501,10 +512,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item">
-              <div class="post"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item"><a class="post__link">
+                <div class="post">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--blue">Здравоохранение</div>
@@ -514,10 +525,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--2x1">
-              <div class="post post--2x1"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--2x1"><a class="post__link">
+                <div class="post post--2x1">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--violete">Ритейл и eCommerce </div>
@@ -529,10 +540,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--1x2">
-              <div class="post post--1x2"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--1x2"><a class="post__link">
+                <div class="post post--1x2">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--dark_green">Телекоммуникации</div>
@@ -544,10 +555,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--1x2">
-              <div class="post post--1x2"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--1x2"><a class="post__link">
+                <div class="post post--1x2">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--dark__green">Банки</div>
@@ -558,10 +569,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--1x2">
-              <div class="post post--1x2"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--1x2"><a class="post__link">
+                <div class="post post--1x2">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--purpure">Ритейл/еCommerce</div>
@@ -572,10 +583,10 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
-            <li class="post__item post__item--2x1">
-              <div class="post post--2x1"><a class="post__link">
+                  </div>
+                </div></a></li>
+            <li class="post__item post__item--2x1"><a class="post__link">
+                <div class="post post--2x1">
                   <div class="post__info">
                     <div class="post__header">
                       <div class="post__category post__category--dark_blue">Государственный сектор  </div>
@@ -587,8 +598,8 @@
                       <div class="post__date">00 окт 2020</div>
                       <div class="post__time">~ 1 мин</div>
                     </div>
-                  </div></a></div>
-            </li>
+                  </div>
+                </div></a></li>
           </ul>
         </div>
       </section>
@@ -639,7 +650,8 @@
               <li class="footer_menu__item  "><a class="footer_menu__link " href="#">Контакты </a></li>
             </ul>
           </li>
-          <li class="footer__item"><a class="footer_title__link" href="#"> Платформа AI</a>
+          <li class="footer__item">
+            <div class="footer_title footer_title--margin_off"><a class="footer_title__link" href="#"> Аналитика</a></div>
             <div class="footer_submenu"><span class="submenu__title">Решения:</span>
               <ul class="footer_submenu__list ">
                 <li class="footer_submenu__item  "><a class="footer_submenu__link " href="#">Банки</a></li>
@@ -675,6 +687,5 @@
         </ul>
       </div>
     </footer>
-    <div class="overlay"></div>
   <script defer src="js/app.js"></script></body>
 </html>
