@@ -12,6 +12,8 @@
 
 .footer__row {
 	@extend .section_in;
+
+	overflow: hidden;
 }
 
 .footer__list {

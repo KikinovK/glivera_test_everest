@@ -21,6 +21,8 @@
 .header__row {
 	@extend .section_in;
 	@extend %global_flex_block_row_wrap_space_between_center;
+
+	overflow: hidden;
 }
 
 .header__nav {
