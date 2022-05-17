@@ -44,8 +44,8 @@
 		width: 32rem;
 		height: 100vh;
 
-		padding: 12rem 2rem 2rem 5rem;
-		margin-bottom: -5rem;
+		padding: 12rem 2rem 2rem 2rem;
+		// margin-bottom: -5rem;
 		margin-right: 0;
 
 		background-color: #fff;
@@ -64,7 +64,10 @@
 	padding: 0 3rem 0 0;
 
 	@include bp($point_3) {
+		padding-right: 0;
 		padding-bottom: 2rem;
+
+		overflow: hidden;
 	}
 }
 
@@ -72,6 +75,11 @@
 
 .header_menu {
   @extend .header_nav__item;
+
+	@include bp($point_3) {
+		padding-bottom: 5rem;
+	}
+
 }
 
 .header_menu__list {
