@@ -1,10 +1,10 @@
-export default function mobilMenu() {
+const mobilMenu = () => {
 	const $menuTrigger = document.querySelector('.menuTrigger');
 	const $menu = document.querySelector('.headerPanel');
 	const $overlay = document.querySelector('.overlay');
 	const $body = document.querySelector('body');
 
-	function hendlerTrigger() {
+	const hendlerTrigger = () => {
 		if ($menu.classList.contains('menu_open')) {
 			$menu.classList.remove('menu_open');
 			$menuTrigger.classList.remove('active_mod');
@@ -16,7 +16,9 @@ export default function mobilMenu() {
 			$body.classList.add('scroll-off');
 			$overlay.classList.add('visible');
 		}
-	}
+	};
 
 	$menuTrigger.addEventListener('click', hendlerTrigger);
-}
+};
+
+export default mobilMenu;
