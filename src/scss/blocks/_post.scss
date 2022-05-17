@@ -372,9 +372,10 @@
   @extend %global_flex_block_column_nowrap_flex-start_center;
   position: relative;
 
-  width: 100%;
+  width: 50%;
   height: 100%;
-  padding: 1rem 2rem 1.4rem 50%;
+  padding: 1rem 2rem 1.4rem 0;
+  margin-left: auto;
 
   color: $white;
 }
